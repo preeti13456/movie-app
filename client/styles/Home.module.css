@@ -1,0 +1,210 @@
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    padding: 2.5rem 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.movieGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.filterContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 25px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: auto;
+}
+
+.searchInput {
+    display: block;
+    width: 75%;
+    height: 37px;
+    padding: 10px 15px;
+    background-color: #F5F5F5;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+.clearButton {
+    width: 20px;
+    height: 37px;
+    background-image: url('../public/cancel.svg');
+    background-color: #F5F5F5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border: none;
+    top: 8px;
+    cursor: pointer;
+}
+
+.formButton {
+    width: 45px;
+    height: 37px;
+    cursor: pointer;
+    background-image: url('../public/magnifyingGlass.svg');
+    background-color: #F5F5F5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.selectInput {
+    display: block;
+    width: 200px;
+    height: 37px;
+    padding: 10px 15px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.favourites {
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filterButtons {
+    width: 25px;
+    height: 37px;
+    margin-left: 10px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.noResults {
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.backHome {
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+.backHome.active {
+    display: block;
+}
+
+/* Pagination styling */
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding-left: 0;
+    margin: 30px 0;
+}
+
+.page,
+.previous,
+.next {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.page:hover {
+    background-color: rgba(245, 143, 124, 0.3);
+}
+
+.active .page {
+    background-color: #F58F7C;
+    cursor: text;
+}
+
+.previous,
+.next {
+    width: auto;
+    height: auto;
+    padding: 7px 13px;
+}
+
+.previous {
+    margin-left: 0;
+}
+
+.next {
+    margin-right: 0;
+}
+
+.disabled {
+    color: #666666;
+    cursor: text;
+}
+
+.loader {
+    text-align: center;
+}
+
+@media (max-width: 875px) {
+    .searchContainer {
+        width: 100%;
+    }
+    .searchInput {
+        width: 100%;
+    }
+
+    .filterContainer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .selectInput {
+        margin-top: 15px;
+    }
+
+}
