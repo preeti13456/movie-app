@@ -6,7 +6,7 @@ export default function Footer() {
             <div className={styles.content}>
                 <p>API source from The MoveDB</p>
                 <a href="https://www.themoviedb.org/"><img src='/TMDB_logo.svg' className={styles.logo}/></a>
-                <p>Developed by Kayla Arbez</p>
+                <p>Developed by Preeti Sharma</p>
             </div>
         </footer>
     )
